@@ -1,3 +1,11 @@
+/*******************************************************************************
+ * loklak-fetcher-client
+ * 	by Yago González (C) 2016 - Under MIT license
+ * 	Bugs? Questions? Don't know what's the meaning of life?
+ * 	Take a look at: github.com/YagoGG/loklak-fetcher-client
+ *  Please, keep this header if you want to use this code. Thank you ;)
+ ******************************************************************************/
+
 window.loklakFetcher = (function() {
   var script = null;
 
