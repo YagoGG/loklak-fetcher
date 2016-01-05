@@ -9,7 +9,9 @@ Want to know more? Here you can learn more [about loklak](http://loklak.org/abou
 To add loklak-fetcher-client to your website, just download the [latest release](https://github.com/YagoGG/loklak-fetcher-client/releases/), and copy the file `src/loklak-fetcher.js` wherever you want in your web directory.  
 All you have to do after that is add the script to your HTML, and you're ready to start fetching!
 
+```html
     <script src="my/path/loklak-fetcher.js"></script>
+```
 
 # Usage
 
@@ -22,6 +24,7 @@ Fetches tweets from the public loklak API, with the options provided.
 
 **Example**
 
+```javascript
     var options = {
       count: 25,
       tzOffset: 60
@@ -30,6 +33,7 @@ Fetches tweets from the public loklak API, with the options provided.
     loklakFetcher.getTweets('loklak', options, function(tweets) {
       // Do something cool!
     });
+```
 
 This example would get the last 25 tweets containing the string `loklak`, published in 2015, with an offset of 60 minutes.
 
