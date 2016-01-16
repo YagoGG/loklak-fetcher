@@ -21,7 +21,7 @@ window.loklakFetcher = (function() {
     getTweets: function(query, options, callback) {
       if(typeof options === 'function') { // A callback has been provided as 2nd
                                           // argument (no options)
-        var callback = options;
+        callback = options;
         options = {};
       } else if(callback === undefined) { // No callback has been provided, even
                                           // as 2nd argument
@@ -34,11 +34,11 @@ window.loklakFetcher = (function() {
 
       // Check if no options have been provided
       if(typeof options === 'undefined') {
-        var options = {}; // Create 'options' to avoid ReferenceErrors later
+        options = {}; // Create 'options' to avoid ReferenceErrors later
       }
 
       // Write unset options as their default
-      for(index in settings) {
+      for(var index in settings) {
         if(options[settings[index]] === undefined) {
           options[settings[index]] = defaults[index];
         }
